@@ -1,0 +1,13 @@
+Podsumowanie
+Powyższy przykład obrazuje, że z poziomu klasy kontrolera mamy dostęp do kontrolek, które zdefiniowaliśmy wcześniej z pliku fxml. Obsługą wciskania przycisków, albo wpisywanego tekstu zajmiemy się w kolejnych lekcjach, na razie musisz zapamiętać schemat, który tutaj przedstawiłem.
+
+Proces jaki będzie powtarzany przy tworzeniu praktycznie każdej aplikacji w Javie FX wygląda następująco.
+
+Tworzymy nowy projekt i dodajemy do niego moduły Javy FX.
+Tworzymy plik fxml z definicją widoku.
+Dodajemy do kontrolek atrybuty fx:id.
+Tworzymy klasę kontrolera.
+W pliku fxml wskazujemy klasę kontrolera dodając atrybut fx:controller.
+Kopiujemy szablon kontrolera ze SceneBuildera i wklejamy go do klasy kontrolera.
+W klasie kontrolera dodajemy metodę initialize(), która wywoływana jest po utworzeniu obiektu kontrolera.
+Musimy także pamiętać o otworzeniu pakietu, w którym znajdują się kontrolery z polami oznaczonymi adnotacją @FXML, aby moduł javafx.fxml miał do nich dostęp przez refleksję.

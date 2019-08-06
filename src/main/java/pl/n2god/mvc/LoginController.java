@@ -20,5 +20,10 @@ public class LoginController {
     @FXML
     private TextField usernameTextField;
 
+    public void initialize(){
+        String labelText = usernameTextField.getText();
+        System.out.println(labelText);
+        usernameTextField.setText("tekst z kontrolera!");
+    }
 }
 
